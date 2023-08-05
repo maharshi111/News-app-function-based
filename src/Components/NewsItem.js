@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 //import PropTypes from 'prop-types'
 
-export class NewsItem extends Component {
+ function NewsItem(props) {
   
-  render() {
-let {title,description,imageUrl,newsUrl,author,date,source} = this.props; //{/* it is the concept of destructuring , it means this.props mai se title aur description fetch kar lo*/}
+ 
+let {title,description,imageUrl,newsUrl,author,date,source} = props; //{/* it is the concept of destructuring , it means this.props mai se title aur description fetch kar lo*/}
     return (
       <div className='my-3'>
             <div className="card"> {/*style={{width: "18rem"}} first bracket for js second bracket for making to object */}
@@ -30,7 +30,7 @@ let {title,description,imageUrl,newsUrl,author,date,source} = this.props; //{/* 
             </div>
       </div>
     )
-  }
+  
 }
 
 export default NewsItem
