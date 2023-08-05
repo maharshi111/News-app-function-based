@@ -166,7 +166,7 @@ document.title = ` ${capitalizeFirstLetter(props.category)}- News Monkey App`
     return (
       <>
       {/* <div className = "container my-3"> commenting out so as to disappear the horizontal scroll bar coming when using infinite scroll  */}
-        <h2 className='text-center' style ={{margin : '35px 0px 10px 0px'}}>NewsMonkey-Top {capitalizeFirstLetter(props.category)} headline </h2>
+        <h2 className='text-center' style ={{margin : '85px 0px 10px 0px'}}>NewsMonkey-Top {capitalizeFirstLetter(props.category)} headline </h2>
        {loading&&<Spinner/> } 
        {/* it means is this.state.loading is true than show spinner component . */}
        
