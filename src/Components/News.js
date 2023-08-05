@@ -85,57 +85,58 @@ document.title = ` ${capitalizeFirstLetter(props.category)}- News Monkey App`
   //   this.updateNews();
 
   // }
-
- const handlePrevClick= async()=>{
-   console.log("previous") //here we have to make function using arrow function only , we cannot use function keyword to define a class as the function is inside a class
-  //  let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=39e6e56406704b0683af9c57378a50a0&page=${this.state.page - 1}&pageSize=${props.pageSize}`;
-  //  this.setState({loading:true})
-  //  let data = await fetch(url);
-  //  let parsedData = await data.json()
-  //  console.log(parsedData);
-  //  this.setState({
-  //    articles : parsedData.articles,
-  //    loading: false
-  //  })
+// changed handlePrevClick to function based, but anyways they are of no use of now as we are not using next and previous button
+//  const handlePrevClick= async()=>{
+//    console.log("previous") //here we have to make function using arrow function only , we cannot use function keyword to define a class as the function is inside a class
+//   //  let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=39e6e56406704b0683af9c57378a50a0&page=${this.state.page - 1}&pageSize=${props.pageSize}`;
+//   //  this.setState({loading:true})
+//   //  let data = await fetch(url);
+//   //  let parsedData = await data.json()
+//   //  console.log(parsedData);
+//   //  this.setState({
+//   //    articles : parsedData.articles,
+//   //    loading: false
+//   //  })
    
-  //  this.setState({
-  //  page : this.state.page-1
-  // })
+//   //  this.setState({
+//   //  page : this.state.page-1
+//   // })
 
-  // changed 
-  // this.setState({
-  //   page : this.state.page-1
-  //  })
-   setPage(page-1)
-   updateNews()
+//   // changed 
+//   // this.setState({
+//   //   page : this.state.page-1
+//   //  })
+//    setPage(page-1)
+//    updateNews()
 
-  }
+//   }
 
- const handleNextClick= async() =>{
-    console.log("Next")
-    // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=39e6e56406704b0683af9c57378a50a0&page=${this.state.page + 1}&pageSize=${props.pageSize}`;
-    // this.setState({ loading:true})
-    // let data = await fetch(url);
-    // let parsedData = await data.json()
-    // console.log(parsedData);
-    // this.setState({
-    //   articles : parsedData.articles,
-    //   loading: false
-    // })
-  //  this.setState({
-  //     page : this.state.page+1
-  //    })
-    // changed 
-    // await this.setState({
-    //       page : this.state.page+1
-    //      })
+// changed handleNextClick to function based 
+//  const handleNextClick= async() =>{
+//     console.log("Next")
+//     // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=39e6e56406704b0683af9c57378a50a0&page=${this.state.page + 1}&pageSize=${props.pageSize}`;
+//     // this.setState({ loading:true})
+//     // let data = await fetch(url);
+//     // let parsedData = await data.json()
+//     // console.log(parsedData);
+//     // this.setState({
+//     //   articles : parsedData.articles,
+//     //   loading: false
+//     // })
+//   //  this.setState({
+//   //     page : this.state.page+1
+//   //    })
+//     // changed 
+//     // await this.setState({
+//     //       page : this.state.page+1
+//     //      })
 
-    await setPage(page+1) 
+//     await setPage(page+1) 
     
-     updateNews()
+//      updateNews()
 
    
-  }
+//   }
 
  const fetchMoreData = async() => {
   //changed
