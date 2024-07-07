@@ -16,7 +16,7 @@ import LoadingBar from 'react-top-loading-bar'
 
  //const pNo = 15 we can use const key word outside of the class and than in Route use pageSize= {pNo}
 function App() {
-  const pNo = 15 // can't use const or let inside a class , so here we are using this keyword as a reference
+  const pNo = 15; // can't use const or let inside a class , so here we are using this keyword as a reference
   
   // state = {
   //   progress: 0
@@ -40,7 +40,7 @@ function App() {
             height={3}  
           />
           <Routes>
-            <Route exact path='/' element={<News setProgress={setProgress}  key='general' pageSize= {pNo} country='us' category='general' />}></Route>
+            <Route exact path='/home' element={<News setProgress={setProgress}  key='general' pageSize= {pNo} country='us' category='general' />}></Route>
             <Route exact path='/business' element={<News setProgress={setProgress}  key='business' pageSize={pNo} country='us' category='business' />}></Route>
             <Route exact path='/entertainment' element={<News setProgress={setProgress}  key='entertainment' pageSize={pNo} country='us' category='entertainment' />}></Route>
             <Route exact path='/general' element={<News setProgress={setProgress}  key='general' pageSize={pNo} country='us' category='general' />}></Route>

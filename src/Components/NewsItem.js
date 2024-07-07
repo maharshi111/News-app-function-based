@@ -9,7 +9,7 @@ let {title,description,imageUrl,newsUrl,author,date,source} = props; //{/* it is
       <div className='my-3'>
             <div className="card"> {/*style={{width: "18rem"}} first bracket for js second bracket for making to object */}
              <div style= {{display : 'flex',
-              justifyContent:"flex-end",
+              justifyContent:'flex-end',
                position: 'absolute',
               right:'0',
               zIndex:'1'

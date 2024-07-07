@@ -141,13 +141,13 @@ document.title = ` ${capitalizeFirstLetter(props.category)}- News Monkey App`
  const fetchMoreData = async() => {
   //changed
    // this.setState({page : this.state.page+1})
-   setPage(page+1);
+   setPage(page+1);// even if we do not write this than also it works all fine as in url we have set page to page+1
     let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=39e6e56406704b0683af9c57378a50a0&page=${page + 1}&pageSize=${props.pageSize}`;
     //changed
     // this.setState({ loading:true})
     setLoading(true)
     let data = await fetch(url);
-    let parsedData = await data.json()
+    let parsedData = await data.json();
     console.log(parsedData);
     //changed 
     // this.setState({
